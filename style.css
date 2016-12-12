@@ -25,7 +25,9 @@ html {
  */
 
 body {
-  margin: 0;
+  background-color: #100F0D;
+  color: #EDDFC2;
+  margin: 5%;
 }
 
 /**
@@ -105,6 +107,10 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: #C0295C;
+  font-style: normal;
+  text-decoration: none;
+
 }
 
 /**
@@ -115,6 +121,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+  color: #742157;
 }
 
 /**
@@ -458,4 +465,39 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul ul{
+  list-style-type: square;
+}
+
+.immagine {
+  display: inline-block;
+  vertical-align: top;
+  width:45%;
+}
+
+.immagine img {
+  float: right;
+}
+
+.container {
+  display: inline-block;
+  width:45%;
+  min-width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .immagine {
+      display: block;
+      width: 100%;
+  }
+  .immagine img {
+    float: none;
+    border-radius: 50%;
+  }
 }
